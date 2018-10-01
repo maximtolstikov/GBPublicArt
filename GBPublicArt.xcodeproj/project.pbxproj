@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9462487E2162003800F2F068 /* DetailPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9462487D2162003800F2F068 /* DetailPlaceViewController.m */; };
 		94C8CEA12160A7F700E83B33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEA02160A7F700E83B33 /* AppDelegate.m */; };
-		94C8CEA42160A7F700E83B33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEA32160A7F700E83B33 /* ViewController.m */; };
 		94C8CEA92160A7F800E83B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C8CEA82160A7F800E83B33 /* Assets.xcassets */; };
 		94C8CEAC2160A7F800E83B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C8CEAA2160A7F800E83B33 /* LaunchScreen.storyboard */; };
 		94C8CEAF2160A7F800E83B33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEAE2160A7F800E83B33 /* main.m */; };
+		94C8CEBE2160B0C600E83B33 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEBD2160B0C600E83B33 /* MapViewController.m */; };
+		94C8CEC12160BA3D00E83B33 /* ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEC02160BA3D00E83B33 /* ApiManager.m */; };
+		94C8CEC42160BC1300E83B33 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEC32160BC1300E83B33 /* DataProvider.m */; };
+		94C8CEC72160C17F00E83B33 /* ArtPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEC62160C17F00E83B33 /* ArtPoint.m */; };
+		94C8CECA2160E1E900E83B33 /* MyMarkerAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEC92160E1E900E83B33 /* MyMarkerAnnotation.m */; };
+		94C8CECD216104EB00E83B33 /* MyMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CECC216104EB00E83B33 /* MyMarker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9462487C2162003800F2F068 /* DetailPlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailPlaceViewController.h; sourceTree = "<group>"; };
+		9462487D2162003800F2F068 /* DetailPlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailPlaceViewController.m; sourceTree = "<group>"; };
 		94C8CE9C2160A7F700E83B33 /* GBPublicArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBPublicArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C8CE9F2160A7F700E83B33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		94C8CEA02160A7F700E83B33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		94C8CEA22160A7F700E83B33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		94C8CEA32160A7F700E83B33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		94C8CEA82160A7F800E83B33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94C8CEAB2160A7F800E83B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94C8CEAD2160A7F800E83B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C8CEAE2160A7F800E83B33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		94C8CEBC2160B0C600E83B33 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		94C8CEBD2160B0C600E83B33 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		94C8CEBF2160BA3D00E83B33 /* ApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiManager.h; sourceTree = "<group>"; };
+		94C8CEC02160BA3D00E83B33 /* ApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiManager.m; sourceTree = "<group>"; };
+		94C8CEC22160BC1300E83B33 /* DataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		94C8CEC32160BC1300E83B33 /* DataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataProvider.m; sourceTree = "<group>"; };
+		94C8CEC52160C17F00E83B33 /* ArtPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtPoint.h; sourceTree = "<group>"; };
+		94C8CEC62160C17F00E83B33 /* ArtPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtPoint.m; sourceTree = "<group>"; };
+		94C8CEC82160E1E900E83B33 /* MyMarkerAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMarkerAnnotation.h; sourceTree = "<group>"; };
+		94C8CEC92160E1E900E83B33 /* MyMarkerAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMarkerAnnotation.m; sourceTree = "<group>"; };
+		94C8CECB216104EB00E83B33 /* MyMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMarker.h; sourceTree = "<group>"; };
+		94C8CECC216104EB00E83B33 /* MyMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMarker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +75,10 @@
 			isa = PBXGroup;
 			children = (
 				94C8CEB52160A85600E83B33 /* App */,
-				94C8CE9F2160A7F700E83B33 /* AppDelegate.h */,
-				94C8CEA02160A7F700E83B33 /* AppDelegate.m */,
-				94C8CEA22160A7F700E83B33 /* ViewController.h */,
-				94C8CEA32160A7F700E83B33 /* ViewController.m */,
-				94C8CEA82160A7F800E83B33 /* Assets.xcassets */,
-				94C8CEAA2160A7F800E83B33 /* LaunchScreen.storyboard */,
-				94C8CEAD2160A7F800E83B33 /* Info.plist */,
-				94C8CEAE2160A7F800E83B33 /* main.m */,
+				94C8CEB82160AF3F00E83B33 /* Entity */,
+				94C8CEB72160AF2F00E83B33 /* Environment */,
+				94C8CEBB2160B08F00E83B33 /* Flows */,
+				94C8CEB92160AF4F00E83B33 /* Resource */,
 			);
 			path = GBPublicArt;
 			sourceTree = "<group>";
@@ -72,8 +86,72 @@
 		94C8CEB52160A85600E83B33 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				94C8CEBA2160AF7D00E83B33 /* AppDelegate */,
+				94C8CEB62160AEFA00E83B33 /* Network */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		94C8CEB62160AEFA00E83B33 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				94C8CEBF2160BA3D00E83B33 /* ApiManager.h */,
+				94C8CEC02160BA3D00E83B33 /* ApiManager.m */,
+				94C8CEC22160BC1300E83B33 /* DataProvider.h */,
+				94C8CEC32160BC1300E83B33 /* DataProvider.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		94C8CEB72160AF2F00E83B33 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				94C8CEAD2160A7F800E83B33 /* Info.plist */,
+				94C8CEAE2160A7F800E83B33 /* main.m */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		94C8CEB82160AF3F00E83B33 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				94C8CEC52160C17F00E83B33 /* ArtPoint.h */,
+				94C8CEC62160C17F00E83B33 /* ArtPoint.m */,
+				94C8CEC82160E1E900E83B33 /* MyMarkerAnnotation.h */,
+				94C8CEC92160E1E900E83B33 /* MyMarkerAnnotation.m */,
+				94C8CECB216104EB00E83B33 /* MyMarker.h */,
+				94C8CECC216104EB00E83B33 /* MyMarker.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		94C8CEB92160AF4F00E83B33 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				94C8CEA82160A7F800E83B33 /* Assets.xcassets */,
+				94C8CEAA2160A7F800E83B33 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		94C8CEBA2160AF7D00E83B33 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				94C8CE9F2160A7F700E83B33 /* AppDelegate.h */,
+				94C8CEA02160A7F700E83B33 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		94C8CEBB2160B08F00E83B33 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				94C8CEBC2160B0C600E83B33 /* MapViewController.h */,
+				94C8CEBD2160B0C600E83B33 /* MapViewController.m */,
+				9462487C2162003800F2F068 /* DetailPlaceViewController.h */,
+				9462487D2162003800F2F068 /* DetailPlaceViewController.m */,
+			);
+			path = Flows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94C8CEA42160A7F700E83B33 /* ViewController.m in Sources */,
+				94C8CEC72160C17F00E83B33 /* ArtPoint.m in Sources */,
+				94C8CEC42160BC1300E83B33 /* DataProvider.m in Sources */,
+				9462487E2162003800F2F068 /* DetailPlaceViewController.m in Sources */,
+				94C8CEC12160BA3D00E83B33 /* ApiManager.m in Sources */,
+				94C8CECA2160E1E900E83B33 /* MyMarkerAnnotation.m in Sources */,
+				94C8CEBE2160B0C600E83B33 /* MapViewController.m in Sources */,
+				94C8CECD216104EB00E83B33 /* MyMarker.m in Sources */,
 				94C8CEAF2160A7F800E83B33 /* main.m in Sources */,
 				94C8CEA12160A7F700E83B33 /* AppDelegate.m in Sources */,
 			);
@@ -283,7 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X37P9Q6XJN;
-				INFOPLIST_FILE = GBPublicArt/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GBPublicArt/Environment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X37P9Q6XJN;
-				INFOPLIST_FILE = GBPublicArt/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GBPublicArt/Environment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
