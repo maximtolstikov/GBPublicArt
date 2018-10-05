@@ -2,7 +2,6 @@
 
 #import "PlaceCollectionViewController.h"
 #import "DataProvider.h"
-#import <SDWebImage/UIImageView+WebCache.h>
 #import "ArtPoint.h"
 #import <MapKit/MapKit.h>
 #import "MyMarker.h"
