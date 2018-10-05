@@ -12,10 +12,10 @@
 
 - (void)getPoints:(void (^)(NSArray* points))completion {
     [[ApiManager sharedInstance] loadWith:[self getUrl] completionHandler:^(NSData * _Nonnull data) {
-        NSDictionary* response = data;
+        NSDictionary* response = @{@"data": data};
         NSMutableArray* array = [NSMutableArray new];
         if (response) {
-            for (NSDictionary* dictionary in response){
+            for (NSDictionary* dictionary in response[@"data"]){
                 ArtPoint* artPoint = [[ArtPoint alloc] initWithDictionary:dictionary];
                 [array addObject:artPoint];
             }

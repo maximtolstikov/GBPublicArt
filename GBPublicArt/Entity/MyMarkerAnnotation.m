@@ -7,7 +7,7 @@
 - (void)setAnnotation:(id<MKAnnotation>)annotation {
     [super setAnnotation:annotation];
     
-    self.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeContactAdd];
+//    self.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeContactAdd];
     self.calloutOffset = CGPointMake(5, 5);
     self.canShowCallout = YES;
     

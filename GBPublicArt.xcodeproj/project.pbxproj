@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9462487E2162003800F2F068 /* DetailPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9462487D2162003800F2F068 /* DetailPlaceViewController.m */; };
+		94C553BF2164B01300C0F628 /* PlaceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C553BE2164B01300C0F628 /* PlaceCollectionViewController.m */; };
 		94C8CEA12160A7F700E83B33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEA02160A7F700E83B33 /* AppDelegate.m */; };
 		94C8CEA92160A7F800E83B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C8CEA82160A7F800E83B33 /* Assets.xcassets */; };
 		94C8CEAC2160A7F800E83B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C8CEAA2160A7F800E83B33 /* LaunchScreen.storyboard */; };
@@ -18,11 +18,12 @@
 		94C8CEC72160C17F00E83B33 /* ArtPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEC62160C17F00E83B33 /* ArtPoint.m */; };
 		94C8CECA2160E1E900E83B33 /* MyMarkerAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEC92160E1E900E83B33 /* MyMarkerAnnotation.m */; };
 		94C8CECD216104EB00E83B33 /* MyMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CECC216104EB00E83B33 /* MyMarker.m */; };
+		94F3B58F21649B54005D447C /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F3B58E21649B54005D447C /* TabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9462487C2162003800F2F068 /* DetailPlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailPlaceViewController.h; sourceTree = "<group>"; };
-		9462487D2162003800F2F068 /* DetailPlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailPlaceViewController.m; sourceTree = "<group>"; };
+		94C553BD2164B01300C0F628 /* PlaceCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceCollectionViewController.h; sourceTree = "<group>"; };
+		94C553BE2164B01300C0F628 /* PlaceCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceCollectionViewController.m; sourceTree = "<group>"; };
 		94C8CE9C2160A7F700E83B33 /* GBPublicArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBPublicArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C8CE9F2160A7F700E83B33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		94C8CEA02160A7F700E83B33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +43,8 @@
 		94C8CEC92160E1E900E83B33 /* MyMarkerAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMarkerAnnotation.m; sourceTree = "<group>"; };
 		94C8CECB216104EB00E83B33 /* MyMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMarker.h; sourceTree = "<group>"; };
 		94C8CECC216104EB00E83B33 /* MyMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMarker.m; sourceTree = "<group>"; };
+		94F3B58D21649B54005D447C /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		94F3B58E21649B54005D447C /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +149,12 @@
 		94C8CEBB2160B08F00E83B33 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				94F3B58D21649B54005D447C /* TabBarController.h */,
+				94F3B58E21649B54005D447C /* TabBarController.m */,
 				94C8CEBC2160B0C600E83B33 /* MapViewController.h */,
 				94C8CEBD2160B0C600E83B33 /* MapViewController.m */,
-				9462487C2162003800F2F068 /* DetailPlaceViewController.h */,
-				9462487D2162003800F2F068 /* DetailPlaceViewController.m */,
+				94C553BD2164B01300C0F628 /* PlaceCollectionViewController.h */,
+				94C553BE2164B01300C0F628 /* PlaceCollectionViewController.m */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -225,12 +230,13 @@
 			files = (
 				94C8CEC72160C17F00E83B33 /* ArtPoint.m in Sources */,
 				94C8CEC42160BC1300E83B33 /* DataProvider.m in Sources */,
-				9462487E2162003800F2F068 /* DetailPlaceViewController.m in Sources */,
 				94C8CEC12160BA3D00E83B33 /* ApiManager.m in Sources */,
 				94C8CECA2160E1E900E83B33 /* MyMarkerAnnotation.m in Sources */,
 				94C8CEBE2160B0C600E83B33 /* MapViewController.m in Sources */,
 				94C8CECD216104EB00E83B33 /* MyMarker.m in Sources */,
+				94F3B58F21649B54005D447C /* TabBarController.m in Sources */,
 				94C8CEAF2160A7F800E83B33 /* main.m in Sources */,
+				94C553BF2164B01300C0F628 /* PlaceCollectionViewController.m in Sources */,
 				94C8CEA12160A7F700E83B33 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

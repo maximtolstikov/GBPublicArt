@@ -6,7 +6,6 @@
 #import "ArtPoint.h"
 #import "MyMarker.h"
 #import "MyMarkerAnnotation.h"
-#import "DetailPlaceViewController.h"
 
 @interface MapViewController () <MKMapViewDelegate, CLLocationManagerDelegate>
 
@@ -79,7 +78,7 @@
 - (void)mapView:(MKMapView *)mapView
         annotationView:(MKAnnotationView *)view
         calloutAccessoryControlTapped:(UIControl *)control {
-    [self findArtPoint:view.annotation.title];
+//    [self findArtPoint:view.annotation.title];
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
@@ -90,17 +89,17 @@
     NSLog(@"New location = %@", locations);
 }
 
-- (void)findArtPoint:(NSString*)title {
-    for (ArtPoint* point in _artPoints) {
-        if (point.title == title) {
-            [self goToDetail:point];
-        }
-    }
-}
+//- (void)findArtPoint:(NSString*)title {
+//    for (ArtPoint* point in _artPoints) {
+//        if (point.title == title) {
+//            [self goToDetail:point];
+//        }
+//    }
+//}
 
--(void)goToDetail:(ArtPoint*)point {
-    DetailPlaceViewController* detailPlace = [[DetailPlaceViewController alloc] initWithArtPoint:point];
-    [self.navigationController pushViewController:detailPlace animated:true];
-}
+//-(void)goToDetail:(ArtPoint*)point {
+//    DetailPlaceViewController* detailPlace = [[DetailPlaceViewController alloc] initWithArtPoint:point];
+//    [self.navigationController pushViewController:detailPlace animated:true];
+//}
 
 @end

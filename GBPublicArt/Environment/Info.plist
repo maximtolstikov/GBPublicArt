@@ -43,5 +43,11 @@
 	<string>Для получения меток PublicArt</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Для получения меток PublicArt</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
 </dict>
 </plist>
