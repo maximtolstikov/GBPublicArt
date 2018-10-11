@@ -6,6 +6,8 @@
 #import "ArtPoint.h"
 #import "MyMarker.h"
 #import "MyMarkerAnnotation.h"
+#include "CoreDataHelper.h"
+#include "ArtObject+CoreDataProperties.h"
 
 @interface MapViewController () <MKMapViewDelegate, CLLocationManagerDelegate>
 
@@ -24,14 +26,15 @@
     
     _coordinate = CLLocationCoordinate2DMake(21.290824, -157.85131);
     _dataProvider = [DataProvider new];
+
     [_dataProvider getPoints:^(NSArray * _Nonnull points) {
         self->_artPoints = points;
         for (ArtPoint *point in self->_artPoints) {
             dispatch_async(dispatch_get_main_queue(),^{
                 [self setMarkersFor:point];
             });
-            
         }
+        [self saveToCoreData:points];
     }];
     
     _mapView = [[MKMapView alloc] initWithFrame:self.view.frame];
@@ -46,6 +49,7 @@
     [_mapView setRegion:region animated:YES];
     [self startLocation];
 }
+
 
 -(void)startLocation {
     _locationManager = [[CLLocationManager alloc] init];
@@ -89,17 +93,20 @@
     NSLog(@"New location = %@", locations);
 }
 
-//- (void)findArtPoint:(NSString*)title {
-//    for (ArtPoint* point in _artPoints) {
-//        if (point.title == title) {
-//            [self goToDetail:point];
-//        }
-//    }
-//}
+-(void)saveToCoreData:(NSArray<ArtPoint*>*)points {
+    
+    for (ArtPoint *point in points) {
+        
+        ArtObject *pointInCoreData = (ArtObject*)[CoreDataHelper.shared                                                        insertNewObjectToEntity:@"ArtObject"];
 
-//-(void)goToDetail:(ArtPoint*)point {
-//    DetailPlaceViewController* detailPlace = [[DetailPlaceViewController alloc] initWithArtPoint:point];
-//    [self.navigationController pushViewController:detailPlace animated:true];
-//}
+            pointInCoreData.title = point.title;
+            pointInCoreData.latitude = point.latitude;
+            pointInCoreData.longitude = point.longitude;
+            pointInCoreData.location = point.location;
+    }
+    
+    [CoreDataHelper.shared save];
+    
+}
 
 @end
