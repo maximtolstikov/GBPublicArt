@@ -8,7 +8,7 @@
 #import <MapKit/MapKit.h>
 #import "MyMarker.h"
 #import "MyMarkerAnnotation.h"
-
+#import <UserNotifications/UserNotifications.h>
 @interface FavoriteCollectionViewController () <MKMapViewDelegate>
 
 @property (strong, nonatomic) NSMutableArray *artObjects;
@@ -44,6 +44,7 @@ static NSString * const reuseIdentifier = @"Cell";
     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
     _collectionView.backgroundColor = UIColor.whiteColor;
     _collectionView.dataSource = self;
+    _collectionView.delegate = self;
     [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     [self.view addSubview:_collectionView];
@@ -84,6 +85,40 @@ static NSString * const reuseIdentifier = @"Cell";
     [_mapView addAnnotation:marker];
     [_mapView registerClass:[MyMarkerAnnotation class] forAnnotationViewWithReuseIdentifier:
      MKMapViewDefaultAnnotationViewReuseIdentifier];
+}
+#pragma mark <UICollectionViewDelegate>
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Установит напоминание"
+                                          message:nil
+                                          preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *setNotifDelayDFive = [UIAlertAction actionWithTitle:NSLocalizedString(@"fiveDelay", @"") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self setNotificationWith:NSLocalizedString(@"fiveDelay", @"") delay:5];
+
+    }];
+    UIAlertAction *setNotifDelayTen = [UIAlertAction actionWithTitle:NSLocalizedString(@"tenDelay", @"") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self setNotificationWith:NSLocalizedString(@"tenDelay", nil) delay:10];
+    }];
+    [alertController addAction:setNotifDelayDFive];
+    [alertController addAction:setNotifDelayTen];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+}
+
+- (void)setNotificationWith:(NSString*)title delay:(NSInteger)delay {
+    
+    UNMutableNotificationContent *content = [UNMutableNotificationContent new];
+    content.title = [NSString localizedUserNotificationStringForKey:title arguments:nil];
+    content.sound = [UNNotificationSound defaultSound];
+    
+    UNTimeIntervalNotificationTrigger *triger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:delay repeats:NO];
+    
+    UNNotificationRequest *requesr = [UNNotificationRequest requestWithIdentifier:@"MyNotification" content:content trigger:triger];
+    
+    [UNUserNotificationCenter.currentNotificationCenter addNotificationRequest:requesr withCompletionHandler:nil];
+    
 }
 
 #pragma mark подготовка массива

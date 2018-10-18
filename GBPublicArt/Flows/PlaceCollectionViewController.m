@@ -8,6 +8,7 @@
 #import "MyMarkerAnnotation.h"
 #include "CoreDataHelper.h"
 #include "ArtObject+CoreDataProperties.h"
+#include "NotifAddFavoriteView.h"
 
 @interface PlaceCollectionViewController () <UISearchResultsUpdating, UIGestureRecognizerDelegate, MKMapViewDelegate>
 
@@ -268,6 +269,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [defaults setObject:_favoritsTitle forKey:@"favorits"];
     [defaults synchronize];
     [self cleanMark];
+    [[NotifAddFavoriteView sheredInstance] show];
 }
 
 -(void)tapCancelButton {

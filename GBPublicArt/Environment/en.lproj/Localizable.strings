@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  GBPublicArt
+
+  Created by Maxim Tolstikov on 18/10/2018.
+  Copyright © 2018 Maxim Tolstikov. All rights reserved.
+*/
+
+"tenDelay" = "10 sec";
+"fiveDelay" = "5 sec";

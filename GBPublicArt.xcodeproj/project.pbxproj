@@ -10,6 +10,8 @@
 		945112AB216E637300BED211 /* FavoriteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945112AA216E637300BED211 /* FavoriteCollectionViewController.m */; };
 		94845354216F281400D4FAD4 /* ArtObject+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94845351216F281400D4FAD4 /* ArtObject+CoreDataClass.m */; };
 		94845355216F281400D4FAD4 /* ArtObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 94845353216F281400D4FAD4 /* ArtObject+CoreDataProperties.m */; };
+		948D797A2175C5DC004770AB /* NotifAddFavoriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 948D79792175C5DC004770AB /* NotifAddFavoriteView.m */; };
+		94AE57AF2176EFB60020FDA1 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AE57AE2176EFB60020FDA1 /* NotificationCenter.m */; };
 		94C553BF2164B01300C0F628 /* PlaceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C553BE2164B01300C0F628 /* PlaceCollectionViewController.m */; };
 		94C8CEA12160A7F700E83B33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEA02160A7F700E83B33 /* AppDelegate.m */; };
 		94C8CEA92160A7F800E83B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C8CEA82160A7F800E83B33 /* Assets.xcassets */; };
@@ -21,6 +23,7 @@
 		94C8CEC72160C17F00E83B33 /* ArtPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEC62160C17F00E83B33 /* ArtPoint.m */; };
 		94C8CECA2160E1E900E83B33 /* MyMarkerAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CEC92160E1E900E83B33 /* MyMarkerAnnotation.m */; };
 		94C8CECD216104EB00E83B33 /* MyMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C8CECC216104EB00E83B33 /* MyMarker.m */; };
+		94DD1B592178627600FF2853 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94DD1B5B2178627600FF2853 /* Localizable.strings */; };
 		94F3B58F21649B54005D447C /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F3B58E21649B54005D447C /* TabBarController.m */; };
 		94F9081E216CCD2D00853302 /* GBPublicArt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94F9081C216CCD2D00853302 /* GBPublicArt.xcdatamodeld */; };
 		94F90836216CDCAA00853302 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F90835216CDCAA00853302 /* CoreDataHelper.m */; };
@@ -33,6 +36,10 @@
 		94845351216F281400D4FAD4 /* ArtObject+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ArtObject+CoreDataClass.m"; sourceTree = "<group>"; };
 		94845352216F281400D4FAD4 /* ArtObject+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArtObject+CoreDataProperties.h"; sourceTree = "<group>"; };
 		94845353216F281400D4FAD4 /* ArtObject+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ArtObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		948D79782175C5DC004770AB /* NotifAddFavoriteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotifAddFavoriteView.h; sourceTree = "<group>"; };
+		948D79792175C5DC004770AB /* NotifAddFavoriteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotifAddFavoriteView.m; sourceTree = "<group>"; };
+		94AE57AD2176EFB60020FDA1 /* NotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
+		94AE57AE2176EFB60020FDA1 /* NotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
 		94C553BD2164B01300C0F628 /* PlaceCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceCollectionViewController.h; sourceTree = "<group>"; };
 		94C553BE2164B01300C0F628 /* PlaceCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceCollectionViewController.m; sourceTree = "<group>"; };
 		94C8CE9C2160A7F700E83B33 /* GBPublicArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBPublicArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +61,9 @@
 		94C8CEC92160E1E900E83B33 /* MyMarkerAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMarkerAnnotation.m; sourceTree = "<group>"; };
 		94C8CECB216104EB00E83B33 /* MyMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMarker.h; sourceTree = "<group>"; };
 		94C8CECC216104EB00E83B33 /* MyMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMarker.m; sourceTree = "<group>"; };
+		94DD1B5021785D3A00FF2853 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		94DD1B5A2178627600FF2853 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		94DD1B5C2178627B00FF2853 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		94F3B58D21649B54005D447C /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		94F3B58E21649B54005D447C /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		94F9081D216CCD2D00853302 /* GBPublicArt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GBPublicArt.xcdatamodel; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 				94C8CEAD2160A7F800E83B33 /* Info.plist */,
 				94C8CEAE2160A7F800E83B33 /* main.m */,
 				94F9081C216CCD2D00853302 /* GBPublicArt.xcdatamodeld */,
+				94DD1B5B2178627600FF2853 /* Localizable.strings */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -177,6 +188,8 @@
 				94C553BE2164B01300C0F628 /* PlaceCollectionViewController.m */,
 				945112A9216E637300BED211 /* FavoriteCollectionViewController.h */,
 				945112AA216E637300BED211 /* FavoriteCollectionViewController.m */,
+				948D79782175C5DC004770AB /* NotifAddFavoriteView.h */,
+				948D79792175C5DC004770AB /* NotifAddFavoriteView.m */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -186,6 +199,8 @@
 			children = (
 				94F90834216CDCAA00853302 /* CoreDataHelper.h */,
 				94F90835216CDCAA00853302 /* CoreDataHelper.m */,
+				94AE57AD2176EFB60020FDA1 /* NotificationCenter.h */,
+				94AE57AE2176EFB60020FDA1 /* NotificationCenter.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -231,6 +246,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 94C8CE932160A7F700E83B33;
 			productRefGroup = 94C8CE9D2160A7F700E83B33 /* Products */;
@@ -248,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C8CEAC2160A7F800E83B33 /* LaunchScreen.storyboard in Resources */,
+				94DD1B592178627600FF2853 /* Localizable.strings in Resources */,
 				94C8CEA92160A7F800E83B33 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,10 +281,12 @@
 				94C8CEC42160BC1300E83B33 /* DataProvider.m in Sources */,
 				94C8CEC12160BA3D00E83B33 /* ApiManager.m in Sources */,
 				94845355216F281400D4FAD4 /* ArtObject+CoreDataProperties.m in Sources */,
+				948D797A2175C5DC004770AB /* NotifAddFavoriteView.m in Sources */,
 				94845354216F281400D4FAD4 /* ArtObject+CoreDataClass.m in Sources */,
 				94C8CECA2160E1E900E83B33 /* MyMarkerAnnotation.m in Sources */,
 				94F90836216CDCAA00853302 /* CoreDataHelper.m in Sources */,
 				94C8CEBE2160B0C600E83B33 /* MapViewController.m in Sources */,
+				94AE57AF2176EFB60020FDA1 /* NotificationCenter.m in Sources */,
 				94F9081E216CCD2D00853302 /* GBPublicArt.xcdatamodeld in Sources */,
 				94C8CECD216104EB00E83B33 /* MyMarker.m in Sources */,
 				94F3B58F21649B54005D447C /* TabBarController.m in Sources */,
@@ -284,8 +303,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				94C8CEAB2160A7F800E83B33 /* Base */,
+				94DD1B5021785D3A00FF2853 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94DD1B5B2178627600FF2853 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94DD1B5A2178627600FF2853 /* en */,
+				94DD1B5C2178627B00FF2853 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -295,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -354,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

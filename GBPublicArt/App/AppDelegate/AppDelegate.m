@@ -8,8 +8,9 @@
 
 #import "AppDelegate.h"
 #import "TabBarController.h"
+#import <UserNotifications/UserNotifications.h>
 
-@interface AppDelegate ()
+@interface AppDelegate () <UNUserNotificationCenterDelegate>
 
 @end
 
@@ -22,7 +23,17 @@
     self.window.rootViewController = [TabBarController new];
     [self.window makeKeyAndVisible];
     
+    [UNUserNotificationCenter.currentNotificationCenter requestAuthorizationWithOptions:UNAuthorizationOptionAlert | UNAuthorizationOptionSound completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if (granted) {
+            UNUserNotificationCenter.currentNotificationCenter.delegate = self;
+        }
+    }];
+    
     return YES;
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler {
+    completionHandler(UNNotificationPresentationOptionAlert);
 }
 
 #pragma mark - Core Data stack
